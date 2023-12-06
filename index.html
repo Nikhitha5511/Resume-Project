@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/normalize.css">
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.11.0/build/cssnormalize-context/cssnormalize-context-min.css">
     <title>Resume Builder</title>
 </head>
 <body>
@@ -23,9 +25,9 @@
         <option id="Minimalist" value="minimalist" class="text-input">Minimalist</option>
     </select>
     <p>Header Color</p>
-    <input id="colorPickerHeader"type="color" id="colorpicker" value="#933434">
+    <input id="colorPickerHeader"type="color" class="colorPicker" id="colorpicker" value="#A63636">
     <p>Header-Text Color</p>
-    <input id="colorPickerHeaderText" type="color" id="colorpicker" value="#FFFFFF">
+    <input id="colorPickerHeaderText" type="color" class="colorPicker" id="colorpicker" value="#FFFFFF">
     <div class="personal-details">
     <p>Personal Details</p>
     <input id="name" class="text-input" type="text" id="name" placeholder="Name"><br>
@@ -50,7 +52,7 @@
 </div>
 
  <div class="right-container" id="twoColumnTemplate">
-  <div id="headerRight" class="header-right"></div>
+  <div id="headerRight" class="header-right RightHeader"></div>
   <div class="flex-class">
     <div class="grey">
     <div class="resume-left">
@@ -66,7 +68,7 @@
    </div>
     </div>
   
-    <div class="resume-right">
+    <div class="resume-right rightResume">
     <p style="font-weight:bold;">SUMMARY</p><hr>
     <div class="summary-class" id="summaryDiv"></div>
     <p style="font-weight:bold;">PROFESSIONAL EXPERIENCE</p><hr>
@@ -81,7 +83,7 @@
  
 <div class="minimalist" id="minimalistTemplate" style="display: none;">
   <div class="rightcontainerMinimalist">
-    <div id="headerRightMinimalist" class="headerRight">
+    <div id="headerRightMinimalist" class="headerRight RightHeaderMInimalist">
       <div class="nameFlex">
       <div class="nameMinimalist" id="nameRightMinimalist"></div>
       <div class="pMinimalist" id="pMinimalist"></div>
@@ -92,17 +94,17 @@
         <p><i class="fa fa-map-marker icon"></i> <span class="location-icon" id="locationDivMinimalist"></span></p>
        </div>
     </div>
-    <div class="flexclassMinimalist">
-     <p style=" color:rgb(49, 49, 164); font-weight:bold;">SUMMARY</p><hr>
+    <div class="flexclassMinimalist rightResumeMinimalist">
+     <p style=" color:rgb(49, 49, 164); font-weight:bold;">SUMMARY</p><hr class="flexhr">
       <div class="summary-class" id="summaryDivMinimalist"></div>
       <p style=" color:rgb(49, 49, 164); font-weight:bold;">SKILLS</p>
-      <hr>
+      <hr class="flexhr">
       <div class="skills-class" id="skillsDivMinimalist"></div>
-      <p style=" color:rgb(49, 49, 164); font-weight:bold;">PROFESSIONAL EXPERIENCE</p><hr>
+      <p style=" color:rgb(49, 49, 164); font-weight:bold;">PROFESSIONAL EXPERIENCE</p><hr class="flexhr">
       <div class="professional-class" id="professionalDivMinimalist"></div>
-      <p style=" color:rgb(49, 49, 164); font-weight:bold;">PROJECTS</p><hr>
+      <p style=" color:rgb(49, 49, 164); font-weight:bold;">PROJECTS</p><hr class="flexhr">
       <div class="projects-class" id="projectsDivMinimalist"></div>
-      <p style=" color:rgb(49, 49, 164); font-weight:bold;">EDUCATION</p><hr>
+      <p style=" color:rgb(49, 49, 164); font-weight:bold;">EDUCATION</p><hr class="flexhr">
       <div class="education-class" id="educationDivMinimalist"></div>
     </div>
     </div>

@@ -175,7 +175,7 @@ function createForm() {
     <input type="date" class="text-input endDate"><br><br>
     <input type="text" class="text-input jobText" placeholder="JobTitle"><br><br>
     <input type="text" class="text-input employer" placeholder="Employer"><br><br>
-    <textarea class="description" placeholder="Description" rows="5" cols="60"></textarea><br>
+    <textarea class="description" placeholder="Description" rows="5" cols="52"></textarea><br>
   `;
 
   form.addEventListener("input", function() {
@@ -304,7 +304,7 @@ function createProjectForm(){
     <p>End Date</p>
     <input type="date" class="text-input endDate"><br><br>
     <input type="text" class="text-input projectTitle" placeholder="projectTitle"><br><br>
-    <textarea class="projectDescription"  placeholder="Description" rows="5" cols="60"></textarea><br>
+    <textarea class="projectDescription"  placeholder="Description" rows="5" cols="52"></textarea><br>
   `;
 
   form.addEventListener("input", function() {
@@ -425,7 +425,7 @@ function createEducationForm() {
     <input type="date" class="text-input endDate"><br><br>
     <input type="text" class="text-input qualification" placeholder="Qualification"><br><br>
     <input type="text" class="text-input schoolDetails" placeholder="school/college"><br><br>
-    <textarea class="educationDescription" placeholder="Description" rows="5" cols="60"></textarea><br>
+    <textarea class="educationDescription" placeholder="Description" rows="5" cols="52"></textarea><br>
   `;
 
   form.addEventListener("input", function () {

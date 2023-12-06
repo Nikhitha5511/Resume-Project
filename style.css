@@ -157,7 +157,7 @@ p{
 .email-container {
     word-wrap: break-word;
     max-width: 30px;
-    /* overflow-wrap: break-word; */
+
   }
   .summary{
     word-wrap: break-word;
@@ -212,9 +212,6 @@ p{
 
   }
   
-  
-  
-  /* Styling for the contact details on the right */
   .contactClassMinimalist {
     display: flex;
     justify-content: flex-end;
@@ -224,7 +221,7 @@ p{
   .headerRight .nameFlex {
     display: flex;
     flex-direction: column;
-    gap: 0.5em; /* Adjust the gap between name and p element */
+    gap: 0.5em; 
   }
 
 .flexDetailsColor{
@@ -242,3 +239,43 @@ p{
     font-size: 16px !important;
     margin-top:-5px;
   }
+  .colorPicker{
+    border:none;
+    width:4rem;
+    height:2rem;
+  }
+  @media screen and (max-width: 768px) {
+
+    .main-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .left-container {
+        margin-left: 0; 
+    }
+    
+  .right-container {
+        width: 100%; 
+        margin-top: 10px; 
+  }
+  .RightHeader{
+    width:100%;
+   }
+  .rightResume hr{
+    width:280%;
+  }
+  .rightcontainerMinimalist{
+    width:100%;
+    margin-top:10px;
+  }
+  .rightResumeMinimalist{
+    width:50%;
+  }
+
+    .text-input {
+        width: 90%; 
+    }
+
+}
